@@ -1,0 +1,179 @@
+nav{
+    display: flex;
+    justify-content:space-between;
+}
+
+.header {
+    list-style-type: none;
+    margin: 10px;
+    overflow: hidden;
+    margin-right: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    /* flex ile yanyana geldi content end ile sağa yaslandı */
+    display: flex;
+    justify-content: end;
+}
+
+.headerli a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+.headerli a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  text-align: center;
+  margin: 100px;
+}
+
+.search-area {
+  background: #fff;
+  display: flex;
+  border: 1px solid #f2f2f2; /* border rengi değiştirildi */
+  border-radius: 24px; /* kenarlar biraz yuvarlandı*/
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Gölge eklendi */
+  z-index: 3;
+  height: 44px;
+  margin: 0 auto;
+  margin-top: -77px;
+  width: 582px;
+}
+
+.search-area:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölge efekti artırıldı */
+}
+
+.search {
+  flex: 1;
+  display: flex;
+  align-items: center; /* Dikey hizalama eklendi */
+  padding: 0 12px; /* Padding değerleri güncellendi */
+}
+
+.search-img {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  /* margin-top: -5px; img yukarı kaynmasın diye silindi */
+}
+
+.search-img span {
+  color: #9aa0a6;
+  height: 20px;
+  width: 20px;
+  margin-top: 0px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 24px;
+  position: relative;
+}
+
+.input-enter {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.input-end{
+    display: flex;
+    cursor: pointer;
+    align-items: flex-end;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    width: 24px;
+    line-height: 44px;
+}
+.voice{
+    background: url(assets/voicelogo.png) 0 0 no-repeat;
+    height: 24px;
+    width: 24px;
+    background-size: 24px;
+}
+.input-area {
+    flex: 1;
+}
+
+.input {
+    border: none; /* Kenarlık kaldırıldı */
+    background: transparent; /* Arka plan rengi kaldırıldı */
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 16px; /* Font boyutu güncellendi */
+    height: 34px;
+    width: 480px; /* Genişlik ayarlandı */
+    outline: none;
+}
+/* butonlar ortalandı */
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.googlesearch,
+.feelinglucky {
+  margin: 11px 24px 0px 0px;
+  padding: 0 16px;
+  line-height: 36px; /* Yükseklik değeri artırıldı */
+  min-width: 100px; /* Minimum genişlik ayarlandı */
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid #f2f2f2; /* Kenarlık eklendi */
+  border-radius: 12px; /* Kenar yuvarlatması eklendi */
+  background-color: #fff; /* Arka plan rengi eklendi */
+  font-family: Arial, sans-serif; /* Font düzenlendi */
+  font-size: 14px; /* Font boyutu güncellendi */
+  color: #5f6368; /* Yazı rengi güncellendi */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Gölge eklendi */
+}
+.googlesearch:hover,
+.feelinglucky:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+    background-color: #f8f8f8;/* Hover rengi güncellendi */
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+
+.footer {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #dfe1e5;
+  border-top: 1px solid #dadce0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: -8px;
+  line-height: 10px;
+  background-color: #f2f2f2; /* Arka plan rengi güncellendi */
+  list-style-type: none; /* Liste noktaları kaldırıldı */
+}
+
+.footerli {
+  float: left;
+}
+
+.footerli a {
+  display: block;
+  color: #70757a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin-left: 14px;
+  margin-right: -20px;
+}
+
+.footerli a:hover {
+  text-decoration: underline;
+}
