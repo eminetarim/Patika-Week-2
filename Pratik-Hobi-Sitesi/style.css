@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+background-color: #c1e9f3;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header {
+    background-color:rgba(58, 124, 187);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.content p{
+    font-family: 'Bilbo';
+    font-size: 22px;
+}
+.content h2{
+    font-family: 'Bowlby One SC';
+}
+.content img{
+    width:50%;
+}
+
+footer {
+    background-color: rgba(58, 124, 187);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.copyright {
+    margin-top: 10px;
+}
+
+/* teknikler sayfası css  */
+.techniques {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.technique {
+    width: 48%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+.technique h3{
+    color: rgb(37, 31, 207);
+}
+
+.technique:hover {
+    border-color: rgba(58, 124, 187, 0.8);
+}
+
+.technique h3 {
+    margin-top: 0;
+}
